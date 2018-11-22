@@ -1,1 +1,2 @@
-# portfolio2018
+# Portfolio
+Minimalistic and straightforward portfolio.
