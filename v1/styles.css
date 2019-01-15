@@ -1,0 +1,354 @@
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 70px;
+	max-width: 100%;
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+	font-weight: lighter;
+	letter-spacing: 13px;
+	text-indent: 47px;
+	max-width: 100%;
+	
+}
+h3{
+	font-family: "Open Sans", sans-serif;
+	font-size: 60px;
+}
+
+h4 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 30px;
+}
+
+h5{
+	
+	font-size:20px;
+	color:rgb(0, 198, 136);
+}
+
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover, .title:hover{
+	color:rgb(0, 198, 136);
+}
+
+.title{
+	line-height: 20px;
+	margin-top: 240px;
+
+}
+
+.title,footer,nav,header{
+	text-align:center;
+}
+
+p,nav,footer, .spanish,.content,#pindex{
+	font-family: 'Raleway', sans-serif;
+}
+
+nav{
+	word-spacing: 200px;
+	padding: 60px;
+}
+
+ul{
+	text-align:center;
+}
+
+li{
+	display: inline;
+
+}
+.secondnav{
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+
+.content{
+	float: right;
+	text-align: right;
+	padding-right: 3%;
+	max-width: 100%;
+	width: 1300px;
+}
+
+
+footer{
+	clear:both;
+	padding:30px;
+}
+
+.spanish{
+	float:right;
+	padding:10px;
+}
+
+svg{
+	position: relative;
+	top: -35px;
+}
+
+#floatingbutton{
+	max-width: 40%;
+	float:right;
+	position: relative;
+	top:50px;
+
+}
+
+
+/*CONTACT*/
+
+
+#wppcontact{
+	background-color: #57ce64;
+}
+
+#fiverr{
+	background-color: green;
+	position:relative;
+	top:29px;
+}
+
+#fiverr img{
+	position: relative;
+	bottom: 22px;
+}
+
+#lastlink{
+	position: relative;
+	bottom:23px;
+} 
+
+#wppcontact,#telegramcontact,#gmailcontact,#fiverr{
+
+	display: inline-block;
+	width:90px;
+	height: 100px;
+	padding:20px;
+
+}
+
+#wppcontact a, #telegramcontact a,#gmailcontact a, #fiverr a{
+	color: white;
+}
+
+#wppcontact a:hover, #telegramcontact a:hover, #gmailcontact a:hover, #fiverr a:hover{
+	color:black;
+}
+
+
+#whatsapp,#telegramcontact,#wppcontact,#gmailcontact, #fiverr{
+	text-align: center;
+}
+
+#telegramcontact{
+	background-color: #097684;
+}
+#gmailcontact{
+	position:relative;
+	top:8.5px;
+	background-color: #f25252;
+}
+
+#gmailcontact img{
+	position:relative;
+	top: -12px;
+}
+
+#gmail{
+	position:relative;
+	top: -7px;
+}
+
+
+/*PORTFOLIO*/
+
+/*PORTFOLIO_navbar*/
+#pindex{
+	
+	clear:both;
+	display: flex;
+	max-width: 90%;
+	max-height:40%;
+	margin:auto;
+}
+
+#pindex:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pindex ul{
+	margin:auto;
+}
+
+#pindex li{
+	display: inline-flex;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: bold;
+	margin:auto;
+
+}
+
+.eddesignpics{
+	max-width: 30%;
+	display:inline-flex;
+	padding: 20px;
+}
+
+/*PORTFOLIO_mcomp*/
+
+
+#themcompportfolio img{
+	margin-top: 50px;
+	margin-left: 120px;
+	max-width: 24%;
+	float:left;
+
+}
+.portfolioparagraphs{
+	float: right;
+	text-align: right;
+	max-width: 100%;
+	width:670px;
+	padding: 10px;
+}
+
+#msite{
+	max-width: 50%;
+	margin-top: 70px;
+	float: right;
+	padding-right: 30px;
+}
+
+#mprocess{
+	margin: 50px;
+	clear: both;
+}
+
+.sitep{
+	padding: 100px;
+	max-width: 30%;
+	float: left;
+	text-align: right;
+}
+
+#mbcards{
+	max-width: 80%;
+}
+
+#m{
+	display: inline-block;
+}
+
+#flexerlogo{
+	max-width: 30%;
+	float: left;
+	padding-left: 100px;
+}
+
+#flexerPresentation{
+	max-width: 60%;
+}
+
+#ava{
+	clear: both;
+	margin-bottom: 550px;
+}
+#avalogo{
+	max-width: 20%;
+	float: left;
+	padding-left: 100px;
+}
+
+#inkdrink{
+	margin-bottom: 700px;
+
+}
+#inkdrinklogo{
+	max-width: 27%;
+	float: left;
+	padding-left: 100px;
+}
+
+#inkdrinkbc{
+	max-width: 80%;
+}
+
+#fontdatabase,#spur{
+
+	padding-bottom: 150px;
+}
+#fontWeb,#spurweb{
+	max-width: 50%;
+}
+
+#fontdatabase h5, h5 a{
+	color:rgb(0, 198, 136);
+}
+@media only screen and (max-width: 1200px){
+
+
+	#fontdatabase,#spur{
+		padding-bottom: 300px;
+	}
+	#inkdrink{
+		margin-bottom: 650px;
+	}
+	.sitep{
+		background-color: #d7dbe2;
+	}
+	.portfolioparagraphs{
+		max-width: 50%;
+		padding-left: 5px;
+	}
+	#themcompportfolio img{
+		clear:both;
+	}
+}
+
+@media only screen and (max-width: 425px){
+
+
+	#fontdatabase,#spur{
+		padding-bottom: 400px;
+	}
+	.sitep{
+		background-color: #d7dbe2;
+		max-width: 100%;
+	}
+	#ava{
+		margin-bottom: 450px;
+	}
+	#inkdrink{
+		margin-bottom: 650px;
+	}
+
+	
+	.portfolioparagraphs{
+		width: 310px;
+		padding-left: 5px;
+	}
+	#themcompportfolio img, #flexerlogo,#avalogo,#inkdrinklogo{
+		float:right;
+	}
+
+	h1{
+		font-size: 60px;
+	}
+
+	h2{
+		font-size:30px;
+	}
+}
