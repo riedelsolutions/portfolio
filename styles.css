@@ -119,9 +119,35 @@ nav a:hover {
 }
 
 .home-projectContainer-individual{
-	background-color: black;
 	border-radius: 7px;
 	width: 270px;
 	height: 270px;
 	margin: 20px; /*provisory spacing between items, change. Better if %*/
+}
+
+.home-projectContainer-individual img{
+	max-height: 250px;
+	display:block;
+    margin:auto;
+    padding-top: 10px;
+}
+
+.themcomp{
+	background-color: black;
+}
+
+.fontdatabase{
+	background-color:#8c0834;
+}
+
+.mtl{
+	background-color: #f4f4f4;
+}
+
+.spur{
+	background-color: #ccffff;
+}
+
+.vanish{
+	background-color: white;
 }
