@@ -1,3 +1,9 @@
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body{
 	background-color: #0000;
 	font-size: 16px;
@@ -7,6 +13,7 @@ body{
     -ms-animation: fadein 2s; /* Internet Explorer */
     -o-animation: fadein 2s; /* Opera < 12.1 */
     animation: fadein 2s;
+    line-height: 1.45;
 }
 
 /*Animations*/
@@ -43,7 +50,9 @@ body{
 /*Fonts + Sizing*/
 
 h1,h2,h3,h4,h5,h6{
-	font-family:'Ubuntu', sans-serif;
+	font-family:'Ubuntu', Helvetica, sans-serif;
+	line-height: 1.15;
+
 }
 
 h1{
@@ -72,6 +81,7 @@ small, .text_small{
 
 p, nav, footer{
 	font-family: 'Anonymous Pro', monospace;
+	width: 100%;
 }
 
 /*Page*/
@@ -90,7 +100,6 @@ a:hover{
 nav{
 	padding-bottom: 30px;
 	margin-left: 5px;
-	font-weight: 400;
 }
 
 nav a{
@@ -137,17 +146,70 @@ nav a:hover {
 }
 
 .fontdatabase{
-	background-color:#8c0834;
+	background-color:#bb0e47;
 }
 
 .mtl{
-	background-color: #f4f4f4;
+	background-color: #fdfdfd;
+}
+
+.solemedia{
+	background-color: #242424;
 }
 
 .spur{
 	background-color: #ccffff;
 }
 
+.spur img{
+	max-width: 250px;
+}
+
 .vanish{
-	background-color: white;
+	background-color: #faf7fc;
+}
+
+.inkdrink{
+	background-color: #eaf9f9;
+}
+
+.other{
+	background-color: #fff47c;
+	font-size: 1.563rem;
+}
+
+.other p{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 220px;
+
+}
+
+
+/*Overlay*/
+
+
+/*Footer*/
+
+footer{
+	text-align: center;
+	clear: both;
+	padding-bottom: 30px;
+	color: #939393;
+}
+
+footer a{
+	border-bottom: none;
+	color: #939393;
+}
+
+footer a:hover{
+	border-bottom: none;
+	color: black;
+}
+
+@media only screen and (max-width: 461px){
+	.external{
+		display: none;
+	}
 }
