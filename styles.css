@@ -255,13 +255,13 @@ nav a:hover {
   float:left;
 }
 
-.xButton a, .forwardArrow{
+.xButton a, .forwardArrow, .backArrow{
 	text-decoration: none;
 	border-bottom: none;
 	color:white;
 }
 
-.xButton a:hover , .forwardArrow:hover{
+.xButton a:hover , .forwardArrow:hover,.backArrow:hover, .overlay-content a:hover img{
 	text-decoration: none;
 	border-bottom: none;
 	color:white;
@@ -273,6 +273,14 @@ nav a:hover {
   right: 45px;
   font-size:30px;
   color:white;
+}
+
+.backArrow{
+	position: absolute;
+	top: 40px;
+	right: 90px;
+	font-size:30px;
+	color:white;
 }
 
 /*overlay scrollbar*/

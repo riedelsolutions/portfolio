@@ -15,6 +15,15 @@
 	<meta name="twitter:description" content="Multidisciplinary Design and Web Development" />
 	<meta name="twitter:image" content="https://i.imgur.com/2w3l4BR.png" />
 	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126185350-2"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'UA-126185350-2');
+	</script>
 
 </head>
 
@@ -104,6 +113,7 @@
 
 	<div class="overlay overlay-fontdatabase">
 		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-fontdatabase')">&times;</a>
+		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[0])">&larr;</a>
 		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[2])">&rarr;</a>
 
 		<div class="overlay-content">
@@ -121,26 +131,33 @@
 
 	</div> <!--closes overlay-fontdatabase-->
 
-	<div class="overlay overlay-mtl">
-		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-mtl')">&times;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[6])">&rarr;</a>
+	<div class="overlay overlay-vanish">
+			<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-vanish')">&times;</a>
+			<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[1])">&larr;</a>
+			<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[3])">&rarr;</a>
 
-		<div class="overlay-content">
-			
-		<h1>M Tool Launcher</h1>
-			<p>I designed The M Tool Launcher starting off the idea of a superapp, and why it never took off. Since people want to have a choice when it comes to each of their phone's features (messaging apps, social media, among others), a single app that does everything will never suit more than one individual.</p>
-			<p>To solve this, The M Tool Launcher provides the benefits of acting like a superapp: reduces the time spend switching between apps, gives the experience of seamlessness navigation, all without sacrificing user choices.</p>
+		<div class = "overlay-content">
+			<h1>Vanish</h1>
+			<p><a href = "https://www.vanishlist.com" target = "_blank">Vanish</a> is a website that guides you through the process of deleting your online information, as well as how to back it up beforehand. Vanish was nominated and a finalist for a
+			<a href = "https://www.producthunt.com/golden-kitty-awards-2018#privacy-focused" target="_blank">PH Award</a> in January 2019.</p>
 
+			<p>Evoking the typical striking, overwhelming look of sites of the late 90s/early 2000s, it reminds the visitors why exactly they are leaving social media: information overload.*</p>
 
-			<p>The M Tool Launcher is currently under development.</p>
+			<a href = "#vanishlink"><img src = "images/vanish-website.png" class = "fontdpic"></a>
+			<a href="#_" class="lightbox" id="vanishlink">
+  				<img src = "images/vanish-website.png">
+			</a>
 
-			<iframe width="560" height="315" class = "mtlhd" src="https://www.youtube.com/embed/4RypVvJa75g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div><!--closes overlay-content-->
-	</div><!--closes overlay-mtl-->
+			<p><em>*Design-talk translation: It's ugly on purpose.</em></p>
+		</div>
+
+	</div>
+	
 
 
 	<div class="overlay overlay-solemedia">
 			<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-solemedia')">&times;</a>
+			<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[2])">&larr;</a>
 			<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[4])">&rarr;</a>
 		<div class = "overlay-content">
 			<h1>SoleMedia</h1>
@@ -168,6 +185,7 @@
 
 	<div class="overlay overlay-spur">
 		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-spur')">&times;</a>
+		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[3])">&larr;</a>
 		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[5])">&rarr;</a>
 
 
@@ -184,29 +202,27 @@
 
 	</div>
 
-	<div class="overlay overlay-vanish">
-			<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-vanish')">&times;</a>
-			<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[3])">&rarr;</a>
+	<div class="overlay overlay-mtl">
+		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-mtl')">&times;</a>
+		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[4])">&larr;</a>
+		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[6])">&rarr;</a>
 
-		<div class = "overlay-content">
-			<h1>Vanish</h1>
-			<p><a href = "https://www.vanishlist.com" target = "_blank">Vanish</a> is a website that guides you through the process of deleting your online information, as well as how to back it up beforehand. Vanish was nominated and a finalist for a
-			<a href = "https://www.producthunt.com/golden-kitty-awards-2018#privacy-focused" target="_blank">PH Award</a> in January 2019.</p>
+		<div class="overlay-content">
+			
+		<h1>M Tool Launcher</h1>
+			<p>I designed The M Tool Launcher starting off the idea of a superapp, and why it never took off. Since people want to have a choice when it comes to each of their phone's features (messaging apps, social media, among others), a single app that does everything will never suit more than one individual.</p>
+			<p>To solve this, The M Tool Launcher provides the benefits of acting like a superapp: reduces the time spend switching between apps, gives the experience of seamlessness navigation, all without sacrificing user choices.</p>
 
-			<p>Evoking the typical striking, overwhelming look of sites of the late 90s/early 2000s, it reminds the visitors why exactly they are leaving social media: information overload.*</p>
 
-			<a href = "#vanishlink"><img src = "images/vanish-website.png" class = "fontdpic"></a>
-			<a href="#_" class="lightbox" id="vanishlink">
-  				<img src = "images/vanish-website.png">
-			</a>
+			<p>The M Tool Launcher is currently under development.</p>
 
-			<p><em>*Design-talk translation: It's ugly on purpose.</em></p>
-		</div>
-
-	</div>
+			<iframe width="560" height="315" class = "mtlhd" src="https://www.youtube.com/embed/4RypVvJa75g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div><!--closes overlay-content-->
+	</div><!--closes overlay-mtl-->
 
 	<div class="overlay overlay-inkdrink">
 		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-inkdrink')">&times;</a>
+		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[5])">&larr;</a>
 		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[7])">&rarr;</a>
 
 		<div class="overlay-content">
@@ -229,6 +245,7 @@
 
 	<div class="overlay overlay-other">
 		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-other')">&times;</a>
+		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[6])">&larr;</a>
 		<div class="overlay-content">
 			<h1>Other</h1>
 			<p>A glimpse into other projects.</p>
