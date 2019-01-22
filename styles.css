@@ -192,9 +192,6 @@ nav a:hover {
 
 /*OVERLAYS*/
 
-.overlay-themcomp{
-	width: 0%;
-}
 
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */    
@@ -216,7 +213,8 @@ nav a:hover {
   top: 25%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: right; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin-top: 30px;
+  margin-bottom: 50px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 .overlay-content p, .overlay-content h1, .overlay-content h2, .overlay-content img{
@@ -257,13 +255,13 @@ nav a:hover {
   float:left;
 }
 
-.xButton a{
+.xButton a, .forwardArrow{
 	text-decoration: none;
 	border-bottom: none;
 	color:white;
 }
 
-.xButton a:hover{
+.xButton a:hover , .forwardArrow:hover{
 	text-decoration: none;
 	border-bottom: none;
 	color:white;
@@ -305,6 +303,21 @@ nav a:hover {
 	padding-top: 30px;
 	max-width: 40%;
 }
+
+.fontdpic{
+	max-width: 60%;
+}
+
+.solemedia-pictures{
+	clear:both;
+	display: flex;
+	flex-wrap: wrap;
+	float: right;
+}
+
+.padded{
+	margin: 30px;
+}
 /*END OF OVERLAYS*/
 
 
@@ -328,9 +341,9 @@ Credit: https://codepen.io/gschier/pen/HCoqh?editors=1100;
 
 .lightbox img {
 	
-	max-width: 96%;
-	max-height: 96%;
-	margin-top: 3%;
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
 }
 
 .lightbox:target {
@@ -340,6 +353,15 @@ Credit: https://codepen.io/gschier/pen/HCoqh?editors=1100;
 }
 
 /*END OF LIGHTBOX*/
+
+iframe{
+	margin-right: 30px;
+	margin-top: 30px;
+	clear: both;
+	float:right;
+	max-width: 100%;
+}
+
 
 /*Footer*/
 
@@ -359,6 +381,24 @@ footer a:hover{
 	border-bottom: none;
 	color: black;
 }
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 750px){
+	.whitem{
+		max-width: 25%;
+		clear: both;
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	iframe{
+		max-width: 85%;
+	}
+}
+
 
 @media only screen and (max-width: 461px){
 	.external{
