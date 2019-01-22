@@ -52,7 +52,7 @@ function slideLeft(shouldGoTo){
 	closeOverlay(currentSlide);
 	openOverlay(shouldGoTo);
 
-	//Add animation variation
+	//Add animation variation left and right
 }
 */
 

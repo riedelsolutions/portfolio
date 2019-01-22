@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 body{
@@ -217,6 +218,11 @@ nav a:hover {
   margin-bottom: 50px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
+.overlay-content::after{
+	content: " ";
+	margin-top: 30px;
+}
+
 .overlay-content p, .overlay-content h1, .overlay-content h2, .overlay-content img{
 	color:white;
 	margin-right: 30px;
@@ -340,6 +346,7 @@ nav a:hover {
 	max-width: 30%;
 }
 
+/*padding for overlay bottom*/
 /*END OF OVERLAYS*/
 
 
@@ -369,7 +376,6 @@ Credit: https://codepen.io/gschier/pen/HCoqh?editors=1100;
 }
 
 .lightbox:target {
-	
 	outline: none;
 	display: block;
 }
@@ -383,8 +389,6 @@ iframe{
 	float:right;
 	max-width: 100%;
 }
-
-
 /*Footer*/
 
 footer{
@@ -404,6 +408,25 @@ footer a:hover{
 	color: black;
 }
 
+#popup{
+	background-color: black;
+	color: white;
+	display: none;
+	max-width: 10%;
+	border-radius: 4px;
+	clear: both;
+	text-align: center;
+
+
+	position: relative;
+	margin: auto;
+	right: 0;
+	left: 0;
+}
+
+.spanish:hover #popup {
+  display: block;
+}
 
 
 /*MEDIA QUERIES*/
@@ -445,6 +468,6 @@ footer a:hover{
   }
 }
 
-.xButton, .themcomp-website a{
+.xButton, .themcomp-website a, a img, img a{
 	border-bottom: none !important;
 }
