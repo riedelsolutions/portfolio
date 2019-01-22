@@ -48,37 +48,97 @@
 	<h2 id = "projects">Projects</h2>
 	<p>Some of the projects I've worked/'m working on.</p>
 	<div class = "home-projectContainer">
-	<div class = "home-projectContainer-individual themcomp"> <img src = "images/mblack.png" alt = "The M Company logo"></div>
-	<div class = "home-projectContainer-individual fontdatabase"><img src="images/fontdatabase-logo.png" alt = "FontDatabase logo"></div>
-	<div class = "home-projectContainer-individual mtl"><img src="images/mtool-logo.png" alt = "M Tool logo"></div>
-	<div class = "home-projectContainer-individual solemedia"><img src = "images/solemedia-logo.png" alt = "SoleMedia logo"></div>
-	<div class = "home-projectContainer-individual spur"><img src = "images/spur-logo.png" alt = "Spur logo"></div>
-	<div class = "home-projectContainer-individual vanish"><img src = "images/vanish-logo.png" alt = "Vanish logo"></div>
-	<div class = "home-projectContainer-individual inkdrink"><img src = "images/inkdrink-logo.png" alt = "InkDrink logo"></div>
-	<div class="home-projectContainer-individual other"><p>Other</p></div>
+	<div class = "home-projectContainer-individual themcomp" onclick = "openOverlay('overlay-themcomp')"> <img src = "images/mblack.png" alt = "The M Company logo"></div>
+
+	<div class = "home-projectContainer-individual fontdatabase" onclick="openOverlay('overlay-fontdatabase')"><img src="images/fontdatabase-logo.png" alt = "FontDatabase logo"></div>
+	<div class = "home-projectContainer-individual mtl" onclick="openOverlay('overlay-mtl')"><img src="images/mtool-logo.png" alt = "M Tool logo"></div>
+
+
+	<div class = "home-projectContainer-individual solemedia" onclick="openOverlay('overlay-mtl')"><img src = "images/solemedia-logo.png" alt = "SoleMedia logo"></div>
+
+
+	<div class = "home-projectContainer-individual spur" onclick="openOverlay('overlay-spur')"><img src = "images/spur-logo.png" alt = "Spur logo"></div>
+
+
+	<div class = "home-projectContainer-individual vanish" onclick="openOverlay('overlay-vanish')"><img src = "images/vanish-logo.png" alt = "Vanish logo"></div>
+
+	<div class = "home-projectContainer-individual inkdrink" onclick="openOverlay('overlay-inkdrink')"><img src = "images/inkdrink-logo.png" alt = "InkDrink logo"></div>
+
+
+	<div class="home-projectContainer-individual other" onclick="openOverlay('overlay-other')"><p>Other</p></div>
 	</div>
 
 
 <!--Overlays-->
 
-<div class="overlay">
 
-	<div class = "overlay-individual overlay-themcomp">
-		<!--button x-->
-		<a href="javascript:void(0)" onclick="close();"s class="xbutton">&times;</a>
+
+
+
+
+	<div class = "overlay overlay-themcomp">
+		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-themcomp')">&times;</a>
+		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "">&rarr;</a>
+
+		<div class="overlay-content">
+
+
+		<h1>The M Company</h1>
+		<img src = "images/whitem.png" class ="whitem">
+
+		
+			<p>
+			I founded <a href = "https://themcomp.com" target="_blank"  class = "point">The M Company</a>, a tech startup focused on simplifying and optimizing existing mobile and desktop devices to get the most productivity and efficiency out of them. Its name comes from the M theory, which looks to tie all quantum theories together in an elegant manner, just like The M Company hopes to simplify tech.<br><br>
+			Taking into account what it stands for and its name, I stripped the logo to the simplest form possible without losing the striking feeling the company was looking for.</p>
+			<p> At The M Company, I am responsible for taking projects from idea phase to production, as well as taking care of its social media presence and corporate identity. Its products have been featured on <a href = "https://www.producthunt.com/golden-kitty-awards-2018#privacy-focused" target="_blank">international media</a>, and nominated for a PH award.</p>
+
+
+			<!--image on overlay, link to lightbox-->
+			<a href = "#themcomp-website-lightbox"><img src = "images/themcomp-website.png" class = "themcomp-website"></a>
+
+			<!--image on lightbox-->
+			
+			<a href = "#_" class = "lightbox" id = "themcomp-website-lightbox">
+			<img src = "images/themcomp-website.png">
+		</a>
+		</div> <!--closes overlay-content-->
+	</div> <!--Closes overlay-themcomp -->
+
+	<div class="overlay overlay-fontdatabase">
+		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-themcomp')">&times;</a>
+		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "">&rarr;</a>
+
+	</div> <!--closes overlay-fontdatabase-->
+
+	<div class="overlay overlay-mtl">
+				<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-mtl')">&times;</a>
+
 	</div>
 
-	<div class = "overlay-individual overlay-fontdatabase"></div>
-	<div class = "overlay-individual overlay-mtl"></div>
-	<div class = "overlay-individual overlay-solemedia"></div>
-	<div class = "overlay-individual overlay-spur"></div>
-	<div class = "overlay-individual overlay-inkdrink"></div>
-	<div class = "overlay-individual overlay-other"></div>
+	<div class="overlay overlay-solemedia">
+				<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-solemedia')">&times;</a>
 
+	</div>
 
-</div>
+	<div class="overlay overlay-spur">
+				<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-spur')">&times;</a>
 
+	</div>
 
+	<div class="overlay overlay-vanish">
+				<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-vanish')">&times;</a>
+
+	</div>
+
+	<div class="overlay overlay-inkdrink">
+				<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-inkdrink')">&times;</a>
+
+	</div>
+
+	<div class="overlay overlay-other">
+				<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-other')">&times;</a>
+
+	</div>
 
 <!--Contact-->
 
@@ -91,5 +151,6 @@
 	<footer><a href = "#" class = "spanish">Español</a>
 		<br>Riedel 2018 ©.</footer>
 
+	<script src="app.js"></script>
 </body>
 </html>
