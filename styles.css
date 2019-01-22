@@ -242,7 +242,7 @@ nav a:hover {
 
 .overlay-content a:hover img{
 	text-decoration: none;
-	border-bottom: none !important;
+	border-bottom: none;
 }
 
 /* Position the close button (top right corner) */
@@ -315,9 +315,23 @@ nav a:hover {
 	float: right;
 }
 
-.padded{
-	margin: 30px;
+
+#inkdrinklogo{
+	max-width: 20%;
+	float: left;
+	padding-top: 0px;
+	padding-left: 30px;
+	padding-right: 20px;
 }
+
+#inkdrinkbc{
+	max-width:60%;
+}
+
+.flitter{
+	max-width: 30%;
+}
+
 /*END OF OVERLAYS*/
 
 
@@ -386,10 +400,17 @@ footer a:hover{
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 750px){
-	.whitem{
-		max-width: 25%;
+	.whitem, #inkdrinkbc, #inkdrinklogo{
 		clear: both;
 		float: right;
+	}
+
+	.whitem{
+		max-width: 25%;
+	}
+
+	#inkdrinkbc{
+		max-width: 75%;
 	}
 }
 

@@ -51,8 +51,8 @@
 	<div class = "home-projectContainer-individual themcomp" onclick = "openOverlay('overlay-themcomp')"> <img src = "images/mblack.png" alt = "The M Company logo"></div>
 
 	<div class = "home-projectContainer-individual fontdatabase" onclick="openOverlay('overlay-fontdatabase')"><img src="images/fontdatabase-logo.png" alt = "FontDatabase logo"></div>
-	<div class = "home-projectContainer-individual mtl" onclick="openOverlay('overlay-mtl')"><img src="images/mtool-logo.png" alt = "M Tool logo"></div>
 
+	<div class = "home-projectContainer-individual vanish" onclick="openOverlay('overlay-vanish')"><img src = "images/vanish-logo.png" alt = "Vanish logo"></div>
 
 	<div class = "home-projectContainer-individual solemedia" onclick="openOverlay('overlay-solemedia')"><img src = "images/solemedia-logo.png" alt = "SoleMedia logo"></div>
 
@@ -60,7 +60,9 @@
 	<div class = "home-projectContainer-individual spur" onclick="openOverlay('overlay-spur')"><img src = "images/spur-logo.png" alt = "Spur logo"></div>
 
 
-	<div class = "home-projectContainer-individual vanish" onclick="openOverlay('overlay-vanish')"><img src = "images/vanish-logo.png" alt = "Vanish logo"></div>
+	<!---->
+	<div class = "home-projectContainer-individual mtl" onclick="openOverlay('overlay-mtl')"><img src="images/mtool-logo.png" alt = "M Tool logo"></div>
+
 
 	<div class = "home-projectContainer-individual inkdrink" onclick="openOverlay('overlay-inkdrink')"><img src = "images/inkdrink-logo.png" alt = "InkDrink logo"></div>
 
@@ -71,14 +73,10 @@
 
 <!--Overlays-->
 
-
-
-
-
-
+<div class = "overlay-container">
 	<div class = "overlay overlay-themcomp">
 		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-themcomp')">&times;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "">&rarr;</a>
+		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[1])">&rarr;</a>
 
 		<div class="overlay-content">
 
@@ -106,7 +104,7 @@
 
 	<div class="overlay overlay-fontdatabase">
 		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-fontdatabase')">&times;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "">&rarr;</a>
+		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[2])">&rarr;</a>
 
 		<div class="overlay-content">
 			<h1>FontDatabase</h1>
@@ -125,7 +123,7 @@
 
 	<div class="overlay overlay-mtl">
 		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-mtl')">&times;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "">&rarr;</a>
+		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[6])">&rarr;</a>
 
 		<div class="overlay-content">
 			
@@ -143,9 +141,7 @@
 
 	<div class="overlay overlay-solemedia">
 			<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-solemedia')">&times;</a>
-			<a href = "javascript:void(0)" class = "forwardArrow" onclick = "">&rarr;</a>
-
-
+			<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[4])">&rarr;</a>
 		<div class = "overlay-content">
 			<h1>SoleMedia</h1>
 			<p>I started designing and developing SoleMedia based on people's fixation with making the most out of their time using social media. The only apps that are remotely similar focused on content management, rather than timeline aggregation. <br><br>
@@ -172,7 +168,7 @@
 
 	<div class="overlay overlay-spur">
 		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-spur')">&times;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "">&rarr;</a>
+		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[5])">&rarr;</a>
 
 
 		<div class="overlay-content">
@@ -189,21 +185,70 @@
 	</div>
 
 	<div class="overlay overlay-vanish">
-				<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-vanish')">&times;</a>
+			<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-vanish')">&times;</a>
+			<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[3])">&rarr;</a>
+
+		<div class = "overlay-content">
+			<h1>Vanish</h1>
+			<p><a href = "https://www.vanishlist.com" target = "_blank">Vanish</a> is a website that guides you through the process of deleting your online information, as well as how to back it up beforehand. Vanish was nominated and a finalist for a
+			<a href = "https://www.producthunt.com/golden-kitty-awards-2018#privacy-focused" target="_blank">PH Award</a> in January 2019.</p>
+
+			<p>Evoking the typical striking, overwhelming look of sites of the late 90s/early 2000s, it reminds the visitors why exactly they are leaving social media: information overload.*</p>
+
+			<a href = "#vanishlink"><img src = "images/vanish-website.png" class = "fontdpic"></a>
+			<a href="#_" class="lightbox" id="vanishlink">
+  				<img src = "images/vanish-website.png">
+			</a>
+
+			<p><em>*Design-talk translation: It's ugly on purpose.</em></p>
+		</div>
 
 	</div>
 
 	<div class="overlay overlay-inkdrink">
-				<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-inkdrink')">&times;</a>
+		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-inkdrink')">&times;</a>
+		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[7])">&rarr;</a>
+
+		<div class="overlay-content">
+			<h1>InkDrink</h1>
+
+			<a href ="#inkdrinklogolink"><img src = "images/inkdrink-logo.png" id = "inkdrinklogo" alt ="inkdrink logo">
+			<a href="#_" class="lightbox" id="inkdrinklogolink">
+  			<img src = "images/inkdrink-logo.png" class =>
+			</a>
+
+			<p>InkDrink is an online art store. Its team asked for a logo that replicated their art style and represented their brand, all while keeping it simple and to the point. Illustrating their brand name in a literal sense was the solution, making the illustration in cool tones to reflect the usual palette used by the artist.<br> <br> <br>
+
+			<a href = "#inkdrinkbclink"><img src ="images/inkdrink-bc.png" alt = "inkdrink business cards" id = "inkdrinkbc"></a></p>
+			<a href="#_" class="lightbox" id="inkdrinkbclink">
+  			<img src = "images/inkdrink-bc.png">
+			</a>
+		</div>
 
 	</div>
 
 	<div class="overlay overlay-other">
-				<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-other')">&times;</a>
+		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-other')">&times;</a>
+		<div class="overlay-content">
+			<h1>Other</h1>
+			<p>A glimpse into other projects.</p>
+
+			<p>Mockup for Singaporean startup:</p>
+			<img src="images/flitter-1.jpg" alt = "Website mockup" class="flitter">
+			<img src="images/flitter-2.jpg" alt = "Website mockup" class="flitter">
+			<br><br><br>
+			<p>Translation & adaptation of design (original design NOT by me):</p>
+			<img src="images/taarg-banner.jpg" alt="banner" style="max-width: 100%;">
+
+		</div>
+
+
 
 	</div>
 
 </div>
+
+</div><!--closes overlay-container-->
 
 <!--Contact-->
 
