@@ -5,7 +5,21 @@ var projectOrder = ["overlay-themcomp",
 "overlay-spur",
 "overlay-mtl",
 "overlay-inkdrink",
+"overlay-nihilstore",
 "overlay-other"];
+
+
+/*
+var projectOrder = ["overlay-themcomp",
+"overlay-fontdatabase",
+"overlay-vanish",
+"overlay-solemedia",
+"overlay-spur",
+"overlay-mtl",
+"overlay-inkdrink",
+"overlay-nihilstore",
+"overlay-other"];
+*/
 
 /*Takes given overlay and opens it*/
 function openOverlay(project) {
