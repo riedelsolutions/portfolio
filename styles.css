@@ -185,7 +185,7 @@ nav a:hover {
 	max-width: 100%;
 	display:inline-flex;
 	padding: 20px;
-padding-right: 10px;
+	padding-right: 10px;
 }
 /*
 .eddesignpics:nth-child(1){
@@ -461,9 +461,17 @@ footer a:hover{
 	}
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 780px){
 	iframe{
 		max-width: 85%;
+	}
+
+	.solemedia-pictures{
+		float: right;
+		clear: both;
+		padding:2px;
+		position: relative;
+		left: 60px;
 	}
 }
 
@@ -475,7 +483,7 @@ footer a:hover{
 }
 
 /* OVERLAY When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
   .overlay a {font-size: 20px}
   .overlay .xButton {
     font-size: 40px;
