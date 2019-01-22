@@ -9,3 +9,9 @@
   	Delete comments
   	min html and css maybe?
 Check for a href = "#"s
+
+
+
+nihil store -> flexbox for promo images
+solemedia float pics to the right on mobile
+'other' section -> add lightboxes

@@ -176,6 +176,22 @@ nav a:hover {
 	background-color: #eaf9f9;
 }
 
+.nihilstore-pictures{
+	clear: both;
+	float: right;
+}
+.eddesignpics{
+	max-height: 300px;
+	max-width: 100%;
+	display:inline-flex;
+	padding: 20px;
+padding-right: 10px;
+}
+/*
+.eddesignpics:nth-child(1){
+	max-width: 20%;
+}
+*/
 .other{
 	background-color: #fff47c;
 	font-size: 1.563rem;
