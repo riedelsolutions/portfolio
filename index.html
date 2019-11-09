@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html>
 <head>
-	<meta name  = "viewport" content= "width = device-width, initial-scale = 1.0">
-	<meta charset="UTF-8">
-	<meta description = "Solutions by Riedel: Multidisciplinary Design and Web Development. Minimalistic solutions to complex problems.">
-	<title>Riedel | Design & Development</title>
-	<link href = "styles.css" rel = "stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Ubuntu" rel="stylesheet">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<title>Riedel Solutions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta description = "Riedel solutions. Multidisciplinary design and development.">
+
+	<!--stylesheets-->
+	<link rel = "stylesheet" href = "styles.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:700" rel="stylesheet">
+	<!--AOS-->
+	<link rel="stylesheet" href="node_modules/aos/dist/aos.css"/>
+
+	<!--slick-->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+
+	<!--favicon-->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 
 	<!--Twitter card-->
 	<meta name="twitter:card" content="summary" />
@@ -16,315 +26,87 @@
 	<meta name="twitter:description" content="Multidisciplinary Design and Web Development" />
 	<meta name="twitter:image" content="https://i.imgur.com/2w3l4BR.png" />
 	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126185350-2"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
 
+  	gtag('config', 'UA-126185350-2');
+	</script>
 </head>
 
 
 <body>
-
-	<h1>Riedel Solutions_</h1>
-	<nav>
-		<a href ="#about" id = "aboutlink">About</a>
-		<a href ="#projects" id = "projectslink">Portfolio</a>
-		<a href ="#contact" id = "contactlink">Contact</a>
-
-		<a href = "https://www.github.com/riedelsolutions" target="_blank" id = "githublink">GitHub<img src="images/external.png" alt ="external link" style="position:relative;top:3px;height: 14px;" class="external"></a>
-
-		<a href = "https://drive.google.com/file/d/1zETnEValpB5bl81WYZzFJmf3R-kY8Zft/view" target="_blank">CV<img src="images/external.png" alt ="external link" style="position:relative;top:3px; height: 14px"  class = "external"></a>
-</nav>
-
-
-	
-	<h2 id = "about">About</h2>
-	<p class = "about">I'm a Multidisciplinary Designer and Front-End Developer. I focus on creating minimalistic solutions to complex problems.
-	<br><br>
-	I've been working in this for the better part of <strong>4 years</strong>. Besides working with clients to find the best solutions for their projects, in their adequate medium, I <strong>teach Front-End Development classes one-on-one</strong>. My CV can be found <a href = "https://drive.google.com/file/d/1zETnEValpB5bl81WYZzFJmf3R-kY8Zft/view" target="_blank" class="underline">here</a>.
-	<br><br>
-	I am the founder of <a href="https://TheMComp.com">The M Company</a> and <a href = "http://nihilstore.bigcartel.com" target="_blank">Nihil Store</a>.
-</p>
-
-
-
-	<!--flexbox-->
-	<h2 id = "projects">Projects</h2>
-	<p>Some of the projects I've worked/'m working on.</p>
-<div class = "home-projectContainer">
-	<div class = "home-projectContainer-individual themcomp" onclick = "openOverlay('overlay-themcomp')"> <img src = "images/mblack.png" alt = "The M Company logo"></div>
-
-	<div class = "home-projectContainer-individual fontdatabase" onclick="openOverlay('overlay-fontdatabase')"><img src="images/fontdatabase-logo.png" alt = "FontDatabase logo"></div>
-
-	<div class = "home-projectContainer-individual vanish" onclick="openOverlay('overlay-vanish')"><img src = "images/vanish-logo.png" alt = "Vanish logo"></div>
-
-	<div class = "home-projectContainer-individual solemedia" onclick="openOverlay('overlay-solemedia')"><img src = "images/solemedia-logo.png" alt = "SoleMedia logo"></div>
-
-
-	<div class = "home-projectContainer-individual spur" onclick="openOverlay('overlay-spur')"><img src = "images/spur-logo.png" alt = "Spur logo"></div>
-
-
-	<!---->
-	<div class = "home-projectContainer-individual mtl" onclick="openOverlay('overlay-mtl')"><img src="images/mtool-logo.png" alt = "M Tool logo"></div>
-
-
-	<div class = "home-projectContainer-individual inkdrink" onclick="openOverlay('overlay-inkdrink')"><img src = "images/inkdrink-logo.png" alt = "InkDrink logo"></div>
-
-	<div class = "home-projectContainer-individual nihilstore" onclick="openOverlay('overlay-nihilstore')"><img src = "images/nihilstore-logo.png" alt = "Nihil Store logo"></div>
-
-
-	<div class="home-projectContainer-individual other" onclick="openOverlay('overlay-other')"><p>Other</p></div>
-	</div>
-
-
-<!--Overlays-->
-
-<div class = "overlay-container">
-	<div class = "overlay overlay-themcomp">
-		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-themcomp')">&times;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[1])">&rarr;</a>
-
-		<div class="overlay-content">
-
-
-			<h1>The M Company</h1>
-			<img src = "images/whitem.png" class ="whitem">
-
-			
-				<p>
-				I founded <a href = "https://themcomp.com" target="_blank"  class = "point">The M Company</a>, a tech startup focused on simplifying and optimizing existing mobile and desktop devices to get the most productivity and efficiency out of them. Its name comes from the M theory, which looks to tie all quantum theories together in an elegant manner, just like The M Company hopes to simplify tech.<br><br>
-				Taking into account what it stands for and its name, I stripped the logo to the simplest form possible without losing the striking feeling the company was looking for.</p>
-				<p> At The M Company, I am responsible for product design and development, taking projects from idea phase to production, as well as taking care of its social media presence and corporate identity. Its products have been featured on international media, and nominated for a <a href = "https://www.producthunt.com/golden-kitty-awards-2018#privacy-focused" target="_blank">PH award</a>.</p>
-
-
-				<!--image on overlay, link to lightbox-->
-				<a href = "#themcomp-website-lightbox"><img src = "images/themcomp-website.png" class = "themcomp-website"></a>
-
-				<!--image on lightbox-->
-				
-				<a href = "#_" class = "lightbox" id = "themcomp-website-lightbox">
-				<img src = "images/themcomp-website.png">
-			</a>
-		</div> <!--closes overlay-content-->
-	</div> <!--Closes overlay-themcomp -->
-
-	<div class="overlay overlay-fontdatabase">
-		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-fontdatabase')">&times;</a>
-		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[0])">&larr;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[2])">&rarr;</a>
-
-		<div class="overlay-content">
-			<h1>FontDatabase</h1>
-			<p><a href = "https://www.fontdatabase.app" target="_blank"  class = "point">fontdatabase.app</a> is a web application designed to help designers find alternative fonts. Using an algorithm, it can help you find fonts more (or less) serious, detailed, formal, etc. to the one you input. Users can also help the algorithm grow by suggesting fonts themselves. <br> <br><a href = "https://fontdatabase.app" target="_blank">fontdatabase.app</a> was featured in <a href = "https://www.producthunt.com/posts/fontdatabase" target = "_blank" class = "underline">Product Hunt</a> and international media outlets such as <a href = "https://www.periodismo.com/2018/08/15/como-encontrar-tipografias-a-partir-de-una-que-ya-conocemos/" target = "_blank" class = "underline">Periodismo.com</a>,  <a href = "https://wwwhatsnew.com/2018/07/15/fontdatabase-una-web-para-encontrar-fuentes-partiendo-de-una-fuente-concreta/" target = "_blank" class = "underline">wwwhatsnew</a>, and <a href = "https://www.tekcrispy.com/2018/07/16/fontdatabase/" target = "_blank" class = "underline">TekCrispy</a>.</p>
-
-
-					<a href = "#fontlink"><img src = "images/fontdatabase-website.png" class = "fontdpic"></a>
-
-							<a href="#_" class="lightbox" id="fontlink" >
-  							<img src = "images/fontdatabase-website.png" class = "lightbox-fontdatabase">
-							</a>
-
-
-
-		</div>
-	</div> <!--closes overlay-fontdatabase-->
-
-	<div class="overlay overlay-vanish">
-			<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-vanish')">&times;</a>
-			<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[1])">&larr;</a>
-			<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[3])">&rarr;</a>
-
-		<div class = "overlay-content">
-			<h1>Vanish</h1>
-			<p><a href = "https://www.vanishlist.com" target = "_blank">Vanish</a> is a website that guides you through the process of deleting your online information, as well as how to back it up beforehand. Vanish was nominated and a finalist for a
-			<a href = "https://www.producthunt.com/golden-kitty-awards-2018#privacy-focused" target="_blank">PH Award</a> in January 2019.</p>
-
-			<p>Evoking the typical striking, overwhelming look of sites of the late 90s/early 2000s, it reminds the visitors why exactly they are leaving social media: information overload.*</p>
-
-			<a href = "#vanishlink"><img src = "images/vanish-website.png" class = "fontdpic"></a>
-			<a href="#_" class="lightbox" id="vanishlink">
-  				<img src = "images/vanish-website.png">
-			</a>
-
-			<p><em>*Design-talk translation: It's ugly on purpose.</em></p>
-		</div>
+<!--Landing-->
+<div class="outer-div">
+	<div class="inner-div">
+		<div data-aos="fade-down" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="500">
+			<h1 style="font-weight: normal;">Hi, I'm <a href = "#about" class="underline"><strong>Camila</strong>.</a></h1>
 		
-
-	</div>
-	
-
-
-	<div class="overlay overlay-solemedia">
-			<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-solemedia')">&times;</a>
-			<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[2])">&larr;</a>
-			<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[4])">&rarr;</a>
-		<div class = "overlay-content">
-			<h1>SoleMedia</h1>
-			<p>I started designing and developing SoleMedia based on people's fixation with making the most out of their time using social media. The only apps that are remotely similar focused on content management, rather than timeline aggregation. <br><br>
-			Since the time spent on social networks is, on average, quite long, I decided to go for a <mark style = "color:white; background-color: black; padding: 3px; border-radius: 3px;">dark palette</mark>, making said time easier on the eye.</p>
-
-			<div class = "solemedia-pictures">
-				<a href = "#loginlink"><img src = "images/solemedia-landing.png" height="400px"></a>
-				<a href="#_" class="lightbox" id="loginlink">
-  				<img src = "images/solemedia-landing.png">
-				</a>
-				<a href = "#signuplink"><img src = "images/solemedia-signup.png" height = "400px"></a>
-				<a href="#_" class="lightbox" id="signuplink">
-  				<img src = "images/solemedia-timeline.png">
-				<a href = "#acclink"><img src = "images/solemedia-timeline.png" height = "400px"></a>
-				<a href="#_" class="lightbox" id="acclink">
-  				<img src = "images/solemedia-timeline.png">
-				</a>
-				
-				</a>
-			</div> <!--closes smpics-->
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/qlKOC2DaEkM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div><!--closes overlay content-->
-	</div><!--closes overlay-solemedia-->
-
-	<div class="overlay overlay-spur">
-		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-spur')">&times;</a>
-		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[3])">&larr;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[5])">&rarr;</a>
-
-
-		<div class="overlay-content">
-			<h1>Spur</h1>
-			<p>Spur is a concept mobile app focused on making setting events and reminders easier than ever, implementing speech recognition. The app is straight to the point and the creators asked for the website to reflect that, so as to lead costumers straight to the product. I created it, as well as the logo, with that in mind.</p>
-
-			<a href = "#spurlink"><img src = "images/spur-website.png" class = "fontdpic"></a>
-
-			<a href="#_" class="lightbox" id="spurlink">
-  			<img src = "images/spur-website.png">
-			</a>
+			<h1 style = "font-weight: normal;">I'm a <a href = "#portfolio" class="underline"><strong>designer</strong></a>, <a href = "#portfolio" class="underline"><strong>UX researcher</strong></a> and <a href = "#portfolio" class="underline"><strong>developer</strong></a>.</h1>
 		</div>
 
-	</div>
+	<!--Portfolio-->
+	<div class = "portfolio"data-aos = "fade-down" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once = "true" data-aos-delay="1000" data-aos-offset="-100">
+	<strong><h2 id="portfolio">Experience</h2></strong>
 
-	<div class="overlay overlay-mtl">
-		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-mtl')">&times;</a>
-		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[4])">&larr;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[6])">&rarr;</a>
+	<h3><a href = "torre.html"><strong>Torre</strong> <span class = "grey"> — UX Research, Design</span></a></h3>
+	<h3><a href="m.html"><strong>The M Company</strong> <span class = "grey"> — Design, Development, UX Research</span></a></h3>
+	<h3><a href = "projects.html"><strong>Freelance Projects</strong><span class = "grey"> — Design, Development, UX Research</span></a></h3>
+	<h3><a href="nihilstore.html"><a href="nihilstore.html"><strong>Nihil Store</strong><span class = "grey"> — Design</span></a></h3>
 
-		<div class="overlay-content">
-			
-		<h1>M Tool Launcher</h1>
-			<p>I designed The M Tool Launcher starting off the idea of a superapp, and why it never took off. Since people want to have a choice when it comes to each of their phone's features (messaging apps, social media, among others), a single app that does everything will never suit more than one individual.</p>
-			<p>To solve this, The M Tool Launcher provides the benefits of acting like a superapp: reduces the time spend switching between apps, gives the experience of seamlessness navigation, all without sacrificing user choices.</p>
+	<br><br><br>
 
+	<span id = "about"></span>
+	<div class = "about" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="-100" data-aos-duration = "550" data-aos-once = "true">
+		<h2>About</h2>
+		<p class = "line-height">I am a designer, UX researcher, and developer. Over the past 4 years, my focus has been (and is) creating <strong>simple-to-use solutions to complex design problems in the form of interfaces</strong>, in their adequate medium.<br><br>
+		This is usually done with a combination of the three— I research a problem and what users have to say about it, design a solution and its copy, develop it or instruct how to, and ship it.<br> <br>
+		Besides freelancing, I am the founder of <a href = "https://TheMComp.com" target="_blank" class="underline">The M Company</a>, my side project which aims to create products to optimize existing technology, and has created products such as the popular <a href="https://fontdatabase.app"class="underline" target="_blank">FontDatabase</a> and PH-nominated <a href = "http://vanishlist.com"class="underline" target="_blank">Vanish</a>.</p><br>
 
-			<p>The M Tool Launcher is currently under development.</p>
-
-			<iframe width="560" height="315" class = "mtlhd" src="https://www.youtube.com/embed/4RypVvJa75g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div><!--closes overlay-content-->
-	</div><!--closes overlay-mtl-->
-
-	<div class="overlay overlay-inkdrink">
-		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-inkdrink')">&times;</a>
-		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[5])">&larr;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[7])">&rarr;</a>
-
-		<div class="overlay-content">
-			<h1>InkDrink</h1>
-
-			<a href ="#inkdrinklogolink"><img src = "images/inkdrink-logo.png" id = "inkdrinklogo" alt ="inkdrink logo">
-			<a href="#_" class="lightbox" id="inkdrinklogolink">
-  			<img src = "images/inkdrink-logo.png" class =>
-			</a>
-
-			<p>InkDrink is an online art store. Its team asked for a logo that replicated their art style and represented their brand, all while keeping it simple and to the point. Illustrating their brand name in a literal sense was the solution, making the illustration in cool tones to reflect the usual palette used by the artist.<br> <br> <br>
-
-			<a href = "#inkdrinkbclink"><img src ="images/inkdrink-bc.png" alt = "inkdrink business cards" id = "inkdrinkbc"></a></p>
-			<a href="#_" class="lightbox" id="inkdrinkbclink">
-  			<img src = "images/inkdrink-bc.png">
-			</a>
-		</div>
-
-	</div>
-<!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
-	<div class="overlay overlay-nihilstore">
-		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-nihilstore')">&times;</a>
-		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[6])">&larr;</a>
-		<a href = "javascript:void(0)" class = "forwardArrow" onclick = "slideRight(projectOrder[8])">&rarr;</a>
+		<p><em>To learn more about how I conduct my work in each area, check my <a href="projects.html" class="underline">Projects page</a>.</em></p>
 
 
-		<div class="overlay-content">
-			<h1>Nihil Store</h1>
-
-			<p>At <a href ="http://www.nihilstore.bigcartel.com">Nihil Store</a> I created the online shop, branding and products. Costumers tend to be creatives with a passion for personalizing their work.</p>
-
-
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/B3raBiQSB0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-		<div class = "nihilstore-pictures">
-			<a href = "#nihillogolink"><img src= "images/nihilstore-logo.png" class = "eddesignpics" alt ="Nihil Store logo"></a>
-			<a href="#_" class="lightbox" id="nihillogolink">
-  			<img src = "images/nihilstore-logo.png">
-			</a>
-			<a href = "#printableslink"><img src= "images/slide4.png" class = "eddesignpics" alt ="printables 2018"></a>
-			<a href="#_" class="lightbox" id="printableslink">
-  			<img src = "images/slide4.png">
-			</a>
-			<a href = "#slide4link"><img src= "images/printables2.png" class = "eddesignpics" alt ="Nihil Store"></a>
-			<a href="#_" class="lightbox" id="slide4link">
-  			<img src = "images/printables2.png">
-			</a>
-
-			<a href = "#2019"><img src= "images/nihilstore-2019.jpg" class = "eddesignpics" alt ="Nihil Journal 2019"></a>
-			<a href="#_" class="lightbox" id="2019">
-  			<img src = "images/nihilstore-2019.jpg">
-			</a>
-			
-
-		</div>
-	</div>
-
-	<div class="overlay overlay-other">
-		<a href="javascript:void(0)" class="xButton" onclick="closeOverlay('overlay-other')">&times;</a>
-		<a href = "javascript:void(0)" class = "backArrow" onclick = "slideLeft(projectOrder[7])">&larr;</a>
-		<div class="overlay-content">
-			<h1>Other</h1>
-			<p>A glimpse into other projects.</p>
-
-			<p>Mockup for Singaporean startup:</p>
-
-			<a href = "#flitter1"><img src= "images/flitter-1.jpg" class = "flitter" alt ="Fliter mockup number one"></a>
-			<a href="#_" class="lightbox" id="flitter1">
-  			<img src = "images/flitter-1.jpg">
-			</a>
-
-			<a href = "#flitter2"><img src= "images/flitter-2.jpg" class = "flitter" alt ="Fliter mockup number two"></a>
-			<a href="#_" class="lightbox" id="flitter2">
-  			<img src = "images/flitter-2.jpg">
-			</a>
-
-			<br><br><br>
-			<p>Translation & adaptation of design (original design NOT by me):</p>
-
-			<a href = "#ta"><img src= "images/taarg-banner.jpg" alt ="Tonight Alive Argentina banner"></a>
-			<a href="#_" class="lightbox" id="ta">
-  			<img src = "images/taarg-banner.jpg">
-			</a>
-		</div>
-
-
-
-	</div>
-
+		
 </div>
 
-</div><!--closes overlay-container-->
+
 <!--Contact-->
+<span id = "contact"></span>
+<div class="contact"  data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="-100"
+     data-aos-duration = "550"
+     data-aos-once = "true">
+<h2>Contact</h2>
+	<h5>Let's work together. <!--Whether it's a short-term or long-term project, I want to find the perfect design solution for you.<br>--> Shoot me <a href = "mailto:riedelgcamila@gmail.com" target="_blank"class = "underline">an email</a> or <a href = "https://t.me/riedelsolutions" target="_blank" class="underline">text</a> and we'll make your vision a reality!</h5>
+</div>
 
-	<h2 id = "contact">Contact</h2>
-	<p>To hire me, you can contact me via 
-		<a href = "mailto:riedelgcamila@gmail.com" target="_blank">email</a> or <a href = "https://t.me/riedels" target="_blank">Telegram</a>. 
-	Looking forward to working together!</p><br><br><br><br>
+<footer class = "text_small">
+	<a href="https://github.com/riedelsolutions" target="_blank"><img src="images/github.png" style="position: relative; bottom: 4px; margin-right: 4px; max-width: 28px"></a>
+	<a href="mailto:riedelgcamila@gmail.com" target="_blank"><img src="images/gmail.png" style="max-width: 3%; margin-right: 3px"></a>
+	<a href="https://t.me/riedelsolutions" target="_blank"><img src="images/telegram.png" style="max-width: 3%"></a><br>
+
+	<!--fix media queries for gmail and telegram icons-->
+
+	<span id = "filler-landing--footer" style="padding: 20px"></span>
+	<br>© Riedel solutions, 2019.</footer>
+</div></div> <!--closes inner-div and outer-div-->
 
 
-	<footer><a href = "#" class = "spanish">Español<div id = "popup">próximamente!</div>
-
-	</a>
-		<br>Riedel 2018 ©.</footer>
-
-	<script src="app.js"></script>
+<!--Scripts-->
+<script src="node_modules/aos/dist/aos.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src = "app.js"></script>
 </body>
 </html>
+
+<!--deannotate and clean up code-->
