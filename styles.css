@@ -22,8 +22,6 @@ h1 {
   line-height: 1.4;
 }
 
-
-
 .underline{
 	text-decoration: none;
 	border-bottom: 3px solid #04D5A8;
@@ -31,11 +29,15 @@ h1 {
 
 h1 a{
 	text-decoration: none;
+	border-bottom: 3px solid #919191 /*!important*/;
+}
+
+h1 a:hover{
 	border-bottom: 3px solid #919191 !important;
 }
 
-.underline:hover, h1 a:hover{
-	border-bottom: 3px solid #04B58F !important;
+.underline:hover{
+	border-bottom: 3px solid #04B58F;
 	transform: translate3d(-100%, 0,0);
 	transition: .2 ease-in;
 	transition-timing-function: cubic-bezier(.17,.67,.83,.67);
@@ -70,8 +72,10 @@ h3:hover span, h4:hover span{
 
 h4 {font-size: 1.563em;}
 
-h5 {font-size: 1.25em;
-	line-height: 2}
+h5 {
+	font-size: 1.25em;
+	line-height: 2
+}
 
 h6{
 	font-size: 1em;
@@ -105,8 +109,6 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,h6::select
 	background-color:#04D5A8; 
 }
 
-
-
 p{
 	font-size: 16px;
 	line-height: 1.9;
@@ -121,26 +123,10 @@ p{
     max-width: 1100px;
 }
 
-
 .center{
 	display: block;
     margin: 0 auto;
 }
-
-/*
-.arrow{
-	min-width: 100px;
-	margin: 0;
-    float: right;
-    padding-top: 90px;
-}
-
-.arrow button{
-	background-color: transparent;
-	border: none;
-	margin-right: 10px;
-}
-*/
 
 a{
 	text-decoration: none;
@@ -149,51 +135,6 @@ a{
 
 .portfolio{
 	margin-top: 200px;
-}
-
-.carousel div{
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.carousel div:nth-of-type(2){
-	background-color: black;
-}
-
-.carousel div:nth-of-type(3){
-	background-color: #bb0e47;
-}
-
-.carousel div:nth-of-type(4){
-	background-color: #f7f7f7;
-}
-
-.carousel div:nth-of-type(5){
-	background-color: white;
-}
-
-.carousel img{
-	max-height: 500px;
-	display:block;
-    margin:auto;
-}
-
-.align{
-	position: relative;
-	right: 10px;
-}
-
-
-.display{
-	display: block !important;
-}
-
-.slick-dots{
-	display: none !important;
-}
-
-.slick-prev:before, .slick-next:before{
-    color:#04D5A8 !important;
 }
 
 .backbtn{
@@ -219,22 +160,14 @@ a{
   color:white;
 }
 
+.mcompany-header-img{
+	max-width: 20%;
+	position: relative;
+	right: 50px;
+}
+
 .contact{
 	margin-top: 120px;
-}
-
-.product-header{
-	width: 100%;
-	border-radius:5px;
-}
-
-.black{
-	background-color: black;
-}
-
-.whitem{
-	max-width: 45%; 
-	padding: 50px;
 }
 
 .center-img{
@@ -243,122 +176,7 @@ a{
 	margin-right: auto;
 }
 
-/*Overlay*/
-/*OVERLAYS*/
-
-
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */    
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: right; /* Centered text/links */
-  margin-top: 30px;
-  margin-bottom: 50px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-.overlay-content::after{
-	content: " ";
-	margin-top: 30px;
-}
-
-.overlay-content p, .overlay-content h1, .overlay-content h2, .overlay-content img{
-	color:white;
-	margin-right: 30px;
-}
-
-.overlay-content p{
-	max-width: 70%;
-	float: right;
-}
-
-.overlay-content a{
-	color:white;
-}
-
-.overlay-content img {
-	padding-top: 40px
-}
-
-.overlay-content a img{
-	text-decoration: none;
-	border-bottom: none;
-}
-
-.overlay-content a:hover img{
-	text-decoration: none;
-	border-bottom: none;
-}
-
-/* Position the close button (top right corner) */
-.xButton {
-  position: absolute;
-  top: 20px;
-  left: 45px;
-  font-size: 60px;
-  color:white;
-  float:left;
-}
-
-.xButton a, .forwardArrow, .backArrow{
-	text-decoration: none;
-	border-bottom: none;
-	color:white;
-}
-
-.xButton a:hover , .forwardArrow:hover,.backArrow:hover, .overlay-content a:hover img{
-	text-decoration: none;
-	border-bottom: none;
-	color:white;
-}
-
-.forwardArrow{
-  position: absolute;
-  top: 40px;
-  right: 45px;
-  font-size:30px;
-  color:white;
-}
-
-.backArrow{
-	position: absolute;
-	top: 40px;
-	right: 90px;
-	font-size:30px;
-	color:white;
-}
-
-/*overlay scrollbar*/
-
-.overlay::-webkit-scrollbar {
-    width: 8px;
-    background-color: #6b6b6b;
-    border-radius: 5px;
-}
-
-.overlay::-webkit-scrollbar-thumb {
-    background-color: black;
-    border-radius: 5px;
-
-}
-
-/*End overlay*/
-
-.fontdatabase-img{
+.centered-img{
 	max-width: 70%;
 	margin-bottom: 30px
 }
@@ -369,19 +187,11 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
+
 .solemedia-pictures img{
 	padding: 2px;
 	max-width: 100%;
 }
-
-/*.singlepage-header{display: flex;}
-
-
-.singlepage-header h1{
-	position: relative;
-	top: 50px;
-	left: 30px;
-}*/
 
 .singlepage-header h1{
 	font-weight: bolder;
@@ -393,11 +203,39 @@ iframe{
 	padding-top: 20px;
 }
 
+.github{
+	position: relative;
+	bottom: 4px;
+	margin-right: 4px;
+	max-width: 28px;
+}
+
+.gmail{
+	max-width: 3%;
+	margin-right: 3px;
+}
+
+.telegram{
+	max-width: 3%;
+}
+
 footer{
 	text-align: center;
 	clear: both;
 	margin-top: 70px;
 	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1300px){
+	.mcompany-header-img{
+		right: 25px
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.telegram, .gmail{
+		max-width: 7%;
+	}
 }
 
 @media only screen and (max-width: 1000px){
@@ -419,6 +257,10 @@ footer{
 		font-size:2em;
 	}
 
+	.mcompany-header-img{
+		right: 20px;
+	}
+
 
 }
 
@@ -426,13 +268,19 @@ footer{
 	h1{
 		font-size:1.95em;
 	}
-	.fontdatabase-img{
+	.centered-img{
 		max-width: 90%;
 	}
 
 	.portfolio{
-		margin-top:0;
+		margin-top:20;
 	}
+
+	.gmail, .telegram{
+		max-width: 11%;
+	}
+
+
 }
 
 @media only screen and (max-width: 386px){
@@ -442,11 +290,16 @@ footer{
  	.outer-div{
  		padding:30px;
  	}
+ 	.mcompany-header-img{
+ 		right: 10px;
+ 	}
  }
 
- /*Slick*/
- @media(max-width:800px) {
-  .slick-slide img {
-    width: 100%;
-  }
-}
+/*481 -> 275*/
+/*media queries for singlepage-header imgsDONE
+test on mobile DONE
+change .html endings for .htaccess file
+refractor code -> 
+	fontdatabase-img change to centered-img DONE
+	take out slick jquery and playfairdisplay to reduce load times DONE
+	take out unnecessary css DONE*/
