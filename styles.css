@@ -190,7 +190,15 @@ a{
 
 .solemedia-pictures img{
 	padding: 2px;
-	max-width: 100%;
+	max-width: 50%;
+}
+
+.flex{
+	display: flex;
+}
+
+.flex img{
+	max-width: 30%
 }
 
 .singlepage-header h1{
